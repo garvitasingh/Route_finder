@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:text="CHOOSE THE LOCATION"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="20dp"/>
+
+            //select from history
+<!--            <Button-->
+<!--                android:id="@+id/frm_history"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="100dp"-->
+<!--                android:clickable="true"-->
+<!--                android:hint="Select From History" />-->
+
+            <Button
+                android:id="@+id/pick_up"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:padding="5dp"
+                android:clickable="true"
+                android:hint="Start Location"
+                android:textColorHighlight="#57000000"
+                android:textColor="@color/black"
+                android:background="@drawable/white_border"/>
+
+            <Button
+                android:id="@+id/destination"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:hint="Destination Location"
+                android:textColorHighlight="#57000000"
+                android:background="@drawable/white_border"/>
+
+            <Button
+                android:id="@+id/getdirc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginTop="100dp"
+                android:text="Get Direction"
+                android:padding="5dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FB8C00"
+                android:padding="2dp"
+                android:text="Have safe journey"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

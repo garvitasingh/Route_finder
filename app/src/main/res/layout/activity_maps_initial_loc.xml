@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mapi"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".initial_location" />
+
+    <RelativeLayout
+        android:id="@+id/from_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/white_border"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/magnify1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_action_name" />
+
+        <AutoCompleteTextView
+            android:id="@+id/input_search_from"
+            android:layout_width="294dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/magnify1"
+            android:background="@null"
+            android:hint="Enter Address for pick up"
+            android:imeOptions="actionDone"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/input_search_from"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="search_button_from"
+            android:text="Go" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/to_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="10dp">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/magnify2"-->
+<!--            android:layout_width="15dp"-->
+<!--            android:layout_height="15dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:src="@drawable/ic_action_name" />-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/input_search_to"-->
+<!--            android:layout_width="294dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_toRightOf="@+id/magnify2"-->
+<!--            android:background="@null"-->
+<!--            android:hint="Enter Address of destination"-->
+<!--            android:imeOptions="actionDone"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="15sp" />-->
+
+        <Button
+            android:id="@+id/confirmbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/button"
+            android:onClick="Confirmi"
+            android:gravity="center"
+            android:text="Confirm"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
